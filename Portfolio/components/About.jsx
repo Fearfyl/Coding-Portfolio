@@ -1,4 +1,5 @@
 import React from 'react';
+import './About.css';
 
 const About = () => {
     return (
@@ -18,17 +19,13 @@ const About = () => {
                     <li>NoSQL Databases</li>
                 </ul>
             </section>
-            <section className="experience">
-                <h2>Experience</h2>
-                <p>I have worked on various projects involving full stack development, creating dynamic and responsive web applications. My experience includes working with both front-end and back-end technologies, ensuring seamless integration and performance.</p>
-            </section>
             <section className="education">
                 <h2>Education</h2>
-                <p>I have a Software Engineering certifaction from Rutgers University.</p>
+                <p>I have a Software Engineering certification from Rutgers University.</p>
             </section>
             <section className="contact">
                 <h2>Contact</h2>
-                <p>You can reach me via email at [your-email@example.com] or connect with me on LinkedIn.</p>
+                <p>You can reach me via email at [wadebuchanan18@gmail.com] or connect with me on LinkedIn.</p>
             </section>
         </div>
     );
