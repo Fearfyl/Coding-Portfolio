@@ -1,14 +1,10 @@
 import React from 'react';
+import './Portfolio.css';
 
 //Add Deployment link to the projects
 
 const Portfolio = () => {
     const projects = [
-        {
-            name: 'Fearfyl',
-            description: 'A horror-themed game developed using Unity.',
-            githubLink: 'https://github.com/Fearfyl/Fearfyl'
-        },
         {
             name: 'Golden Games',
             description: 'A repository for various game development projects.',
