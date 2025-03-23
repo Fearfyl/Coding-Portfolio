@@ -1,0 +1,45 @@
+:root {
+    --primary: #f8f9fa; /* Light gray */
+    --secondary: #007bff; /* Blue */
+    --text-color: #2b5176; /* Dark blue */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--primary);
+    color: var(--text-color);
+}
+
+.about-section {
+    padding: 2rem;
+    background-color: var(--primary);
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.about-section .pimage {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-section .pimage:hover {
+    transform: scale(1.05);
+}
