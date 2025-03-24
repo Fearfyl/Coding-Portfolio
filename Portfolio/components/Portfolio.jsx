@@ -1,43 +1,48 @@
 import React from 'react';
 import './Portfolio.css';
+import Project from './Project';
 
-//Add Deployment link to the projects
+const projectData = [
+    {
+        title: 'Golden Games',
+        description: 'A repository for various game development projects.',
+        githubLink: 'https://github.com/Fearfyl/Golden_Games_repo',
+        deployedLink: 'https://pink727.github.io/Golden_games_repo/',
+        image: 'path/to/golden-games-image.jpg'
+    },
+    {
+        title: 'SkillShare',
+        description: 'A platform for sharing and learning new skills.',
+        githubLink: 'https://github.com/Fearfyl/SkillShare',
+        deployedLink: 'https://skillsshareproject.onrender.com',
+        image: 'path/to/skillshare-image.jpg'
+    },
+    {
+        title: 'GreenSteps',
+        description: 'An app promoting eco-friendly habits and sustainability.',
+        githubLink: 'https://github.com/Fearfyl/GreenSteps',
+        deployedLink: 'https://greensteps-u62w.onrender.com/',
+        image: 'path/to/greensteps-image.jpg'
+    }
+];
 
-const Portfolio = () => {
-    const projects = [
-        {
-            name: 'Golden Games',
-            description: 'A repository for various game development projects.',
-            githubLink: 'https://github.com/Fearfyl/Golden_Games_repo'
-        },
-        {
-            name: 'SkillShare',
-            description: 'A platform for sharing and learning new skills.',
-            githubLink: 'https://github.com/Fearfyl/SkillShare'
-        },
-        {
-            name: 'GreenSteps',
-            description: 'An app promoting eco-friendly habits and sustainability.',
-            githubLink: 'https://github.com/Fearfyl/GreenSteps'
-        }
-    ];
-
+function Portfolio() {
     return (
-        <div className="portfolio">
-            <h2>My Projects</h2>
-            <div className="projects">
-                {projects.map((project, index) => (
-                    <div key={index} className="project">
-                        <h3>{project.name}</h3>
-                        <p>{project.description}</p>
-                        <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                            View on GitHub
-                        </a>
-                    </div>
+        <div className="portfolio-section">
+            <h2>Portfolio</h2>
+            <div className="flex-container">
+                {projectData.map((project, index) => (
+                    <Project
+                        key={index}
+                        title={project.title}
+                        image={project.image}
+                        deployedLink={project.deployedLink}
+                        githubLink={project.githubLink}
+                    />
                 ))}
             </div>
         </div>
     );
-};
+}
 
 export default Portfolio;
