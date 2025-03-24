@@ -1,27 +1,51 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Navigation.css';
 
-const projects = [
-    { name: 'Project 1', path: '/projects/project1' },
-    { name: 'Project 2', path: '/projects/project2' },
-    { name: 'Project 3', path: '/projects/project3' },
-    // Add more projects here
-];
+import '../style/Navigation.css';
+import { Link, useLocation } from 'react-router-dom';
 
-const Nav = () => {
+const Navigation = () => {
+    const currentPage = useLocation().pathname;
+
     return (
-        <nav>
-            <h1>My Projects</h1>
-            <ul>
-                {projects.map((project, index) => (
-                    <li key={index}>
-                        <Link to={project.path}>{project.name}</Link>
+        <>
+            <h1>Kaviyarasi Krishnan</h1>
+            <nav className="navbar">
+                <ul>
+                    <li className="nav-item">
+                        <Link
+                            to="/About"
+                            className={currentPage === '/About' ? 'nav-link active' : 'nav-link'}
+                        >
+                            About Me
+                        </Link>
                     </li>
-                ))}
-            </ul>
-        </nav>
+                    <li className="nav-item">
+                        <Link
+                            to="/Portfolio"
+                            className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
+                        >
+                            Portfolio
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link
+                            to="/Contact"
+                            className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
+                        >
+                            Contact
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link
+                            to="/Resume"
+                            className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}
+                        >
+                            Resume
+                        </Link>
+                    </li>
+                </ul>
+            </nav>
+        </>
     );
 };
 
-export default Nav;
+export default Navigation;

@@ -1,10 +1,12 @@
 import React from 'react';
-import './About.css';
+import '../style/About.css';
+import '../assests/UserProfile.png'
 
 const About = () => {
     return (
         <div className="about-container">
             <h1>About Me</h1>
+            <img src={Profile} alt="profile" width ="150" heigth="150" className='pimage' />
             <section className="introduction">
                 <h2>Introduction</h2>
                 <p>I am a full stack engineer with expertise in Node.js, JavaScript, React, Python, and NoSQL databases. I have a passion for building scalable and efficient web applications.</p>

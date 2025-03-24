@@ -27,38 +27,13 @@ const Resume = () => {
                 </ul>
             </div>
 
-            {/* Experience Section */}
-            <div className="experience">
-                <h3>Experience</h3>
-                <div className="job">
-                    <h4>Software Engineer</h4>
-                    <p>Company Name</p>
-                    <p>Jan 2020 - Present</p>
-                    <ul>
-                        <li>Developed and maintained web applications using React and Node.js.</li>
-                        <li>Collaborated with cross-functional teams to define, design, and ship new features.</li>
-                        <li>Implemented responsive design and ensured cross-browser compatibility.</li>
-                    </ul>
-                </div>
-                <div className="job">
-                    <h4>Frontend Developer</h4>
-                    <p>Company Name</p>
-                    <p>Jun 2018 - Dec 2019</p>
-                    <ul>
-                        <li>Built and optimized user interfaces using HTML, CSS, and JavaScript.</li>
-                        <li>Worked closely with designers to create visually appealing and user-friendly websites.</li>
-                        <li>Maintained code quality and organization through version control systems like Git.</li>
-                    </ul>
-                </div>
-            </div>
-
             {/* Education Section */}
             <div className="education">
                 <h3>Education</h3>
                 <div className="school">
-                    <h4>Bachelor of Science in Computer Science</h4>
-                    <p>University Name</p>
-                    <p>Graduated: May 2018</p>
+                    <h4>Certification in Web Development</h4>
+                    <p>Rutgers University</p>
+                    <p>August 2024 - March 2025</p>
                 </div>
             </div>
         </section>
